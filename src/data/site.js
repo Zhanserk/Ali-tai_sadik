@@ -285,6 +285,21 @@ export const DOCS = [
     files: { '2024–2025': d('admin/ethics-protocols-2024-2025.pdf') },
   },
   {
+    title: 'Қамқоршылық кеңестің құрамы',
+    kind: 'Кеңес',
+    files: { always: d('admin/trustee-council.pdf') },
+  },
+  {
+    title: 'Балалардың даму диагностикасы: бастапқы (жиынтық)',
+    kind: 'Excel',
+    files: { always: d('diagnostics/diagnostics-initial.xlsx') },
+  },
+  {
+    title: 'Балалардың даму диагностикасы: 2026–2027 оқу жылы (балалардың аты-жөнінсіз)',
+    kind: 'Excel',
+    files: { always: d('diagnostics/diagnostics-2026-2027.xlsx') },
+  },
+  {
     title: 'Медициналық қызметке лицензия',
     kind: 'Лицензия',
     files: { always: d('official/license-medical.pdf') },

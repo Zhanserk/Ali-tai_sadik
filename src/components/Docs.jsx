@@ -36,7 +36,7 @@ export default function Docs() {
             <a key={doc.title} className="doc" href={doc.url} target="_blank" rel="noreferrer">
               <span className="doc-kind">{doc.kind}</span>
               <h3>{doc.title}</h3>
-              <span className="doc-open">PDF ашу ↗</span>
+              <span className="doc-open">{doc.url.endsWith('.pdf') ? 'PDF ашу ↗' : 'Excel жүктеу ↗'}</span>
             </a>
           ))}
         </div>
