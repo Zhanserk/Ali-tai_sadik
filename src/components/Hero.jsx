@@ -39,6 +39,10 @@ export default function Hero() {
             </svg>
             <span>☀</span>
           </div>
+          <div className="hours-chip">
+            <b>{KINDERGARTEN.hours}</b>
+            <span>жұмыс уақыты</span>
+          </div>
         </div>
       </div>
 
