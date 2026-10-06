@@ -1,5 +1,6 @@
 import { FACTS, KINDERGARTEN, PHOTOS } from '../data/site';
 import { Horn, Shanyrak } from './Ornament';
+import Tai from './Tai';
 
 export default function Hero() {
   return (
@@ -34,10 +35,10 @@ export default function Hero() {
                 <path id="circle" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" />
               </defs>
               <text>
-                <textPath href="#circle">АЛИ-ТАЙ • ҚАМҚОРЛЫҚ • ЖЫЛУЛЫҚ • ТӘРБИЕ •</textPath>
+                <textPath href="#circle" textLength="270" lengthAdjust="spacing">АЛИ-ТАЙ • ТАЙ-ТАЙ • ТҰСАУ КЕСЕР •</textPath>
               </text>
             </svg>
-            <span>☀</span>
+            <span><Tai /></span>
           </div>
           <div className="hours-chip">
             <b>{KINDERGARTEN.hours}</b>
@@ -45,6 +46,15 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <div className="tusau" aria-hidden="true">
+        <div className="tusau-cord">
+          <i className="cord cord-l" />
+          <i className="cord cord-r" />
+        </div>
+        <Tai walking className="tusau-tai" />
+      </div>
+      <p className="wrap tusau-note">Тай-тай, балам! Тұсауың кесілді — ары қарай бірге жүреміз.</p>
 
       <div className="wrap">
         <ul className="facts">

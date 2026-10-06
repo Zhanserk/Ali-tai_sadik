@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { KINDERGARTEN, NAV } from '../data/site';
-import { Shanyrak } from './Ornament';
+import Tai from './Tai';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Header() {
     <header className={`topbar ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="wrap topbar-in">
         <a href="#top" className="brand" onClick={() => setOpen(false)}>
-          <Shanyrak className="brand-mark" />
+          <span className="brand-mark"><Tai /></span>
           <span className="brand-text">
             <b>{KINDERGARTEN.short}</b>
             <small>бөбекжай балабақшасы</small>
