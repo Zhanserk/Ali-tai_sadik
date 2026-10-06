@@ -4,7 +4,7 @@ import { Wave } from './Ornament';
 export default function DayFlow() {
   return (
     <section className="day" id="day">
-      <Wave className="wave-green" flip />
+      <Wave className="wave-green" />
       <div className="day-in">
         <div className="wrap">
           <div className="section-title light">
@@ -27,7 +27,7 @@ export default function DayFlow() {
           <p className="day-note">* Бекітілген «Күн тәртібі, 2024–2025 оқу жылы» құжаты бойынша. Толық нұсқасы — «Құжаттар» бөлімінде.</p>
         </div>
       </div>
-      <Wave className="wave-green" />
+      <Wave className="wave-green" flip />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { FACTS, KINDERGARTEN, PHOTOS } from '../data/site';
 import { Horn, Shanyrak } from './Ornament';
 import Tai from './Tai';
+import FirstSteps from './FirstSteps';
 
 export default function Hero() {
   return (
@@ -47,21 +48,16 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="tusau" aria-hidden="true">
-        <div className="tusau-cord">
-          <i className="cord cord-l" />
-          <i className="cord cord-r" />
+      <FirstSteps />
+      <div className="hero-ground">
+        <p className="wrap tusau-note">Тай-тай, балам! Тұсауың кесілді — ары қарай бірге жүреміз.</p>
+        <div className="wrap">
+          <ul className="facts">
+            {FACTS.map((f) => (
+              <li key={f.label}><b>{f.big}</b><span>{f.label}</span></li>
+            ))}
+          </ul>
         </div>
-        <Tai walking className="tusau-tai" />
-      </div>
-      <p className="wrap tusau-note">Тай-тай, балам! Тұсауың кесілді — ары қарай бірге жүреміз.</p>
-
-      <div className="wrap">
-        <ul className="facts">
-          {FACTS.map((f) => (
-            <li key={f.label}><b>{f.big}</b><span>{f.label}</span></li>
-          ))}
-        </ul>
       </div>
     </section>
   );
