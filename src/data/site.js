@@ -118,6 +118,15 @@ const d = (file) => `/docs/${file}`;
 
 export const DOC_YEARS = ['2025–2026', '2024–2025', '2023–2024'];
 
+// Санаттар: құжаттың `kind` өрісі бойынша топтастырылады
+export const DOC_CATEGORIES = [
+  { key: 'groups', title: 'Топ жоспарлары', kinds: ['Жаз жоспары', 'Циклограмма'] },
+  { key: 'plans', title: 'Жылдық жоспар, күн тәртібі', kinds: ['Жоспар', 'Тәртіп'] },
+  { key: 'councils', title: 'Кеңестер мен хаттамалар', kinds: ['Хаттама', 'Әдеп', 'Кеңес'] },
+  { key: 'diagnostics', title: 'Диагностика', kinds: ['Excel'] },
+  { key: 'official', title: 'Ресми құжаттар', kinds: ['Лицензия', 'Тіркеу', 'СЭС'] },
+];
+
 export const DOCS = [
   {
     title: 'Кіші топ — жазғы сауықтыру жоспары',
